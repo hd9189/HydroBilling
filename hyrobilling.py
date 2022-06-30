@@ -4,8 +4,8 @@ from matplotlib import pyplot as plt
 
 def billing():
     df = pd.read_csv('Hydro_Billing.csv')
-    #ax = df.plot.bar(
-    ax = df.plot.line(
+    ax = df.plot.bar(
+    # ax = df.plot.line(
         x='From (yyyy-mm-dd)',
         y='Amount Due',
         rot = 45,
